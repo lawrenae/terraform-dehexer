@@ -9,10 +9,6 @@ import (
 	"os"
 )
 
-//usage:
-//go build -o dehex dehex.go && ./dehex ec28
-//ignore output starting with =
-
 func hexTob64Str(hexStr string) string {
 	src := []byte(hexStr)
 	dst := make([]byte, hex.DecodedLen(len(src)))
